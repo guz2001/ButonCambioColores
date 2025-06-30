@@ -31,3 +31,17 @@ function convertirNombreARGB(nombre) {
     document.body.removeChild(div);
     return colorRGB;
 }
+
+let click=document.getElementById('conteo-click')
+let divColor=document.getElementById('cambioscolores')
+let coloresDiv = ['red', 'blue', 'green', 'orange', 'purple', 'yellow'];
+
+click.addEventListener('click',function(){
+    let colorAhora= getComputedStyle(divColor).backgroundColor;
+    let otroColor;
+
+
+})
+do{
+    let index=Math.floor(Math.random()*)
+}
