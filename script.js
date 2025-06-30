@@ -10,10 +10,16 @@ boton.addEventListener('click', function () {
 
     let nuevoColor;
 
-    do {
+    /*do {
         // Elegir color aleatorio
         let indice = Math.floor(Math.random() * colores.length);
         nuevoColor = colores[indice];
+    } while (colorActual === convertirNombreARGB(nuevoColor));
+    */
+     do {
+        // Elegir color aleatorio
+        let randomColor = Math.floor(Math.random() * colores.length);
+        nuevoColor = colores[randomColor];
     } while (colorActual === convertirNombreARGB(nuevoColor));
 
     // Cambiar el color del fondo
@@ -32,6 +38,7 @@ function convertirNombreARGB(nombre) {
     return colorRGB;
 }
 
+
 let click=document.getElementById('conteo-click')
 let divColor=document.getElementById('cambioscolores')
 let coloresDiv = ['red', 'blue', 'green', 'orange', 'purple', 'yellow'];
@@ -43,5 +50,6 @@ click.addEventListener('click',function(){
 
 })
 do{
-    let index=Math.floor(Math.random()*)
+    let index=Math.floor(Math.random()*coloresDiv.length)
+    otroColor=
 }
